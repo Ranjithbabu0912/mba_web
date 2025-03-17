@@ -54,7 +54,6 @@ nav {
 
 .navlogo {
     z-index: 1000;
-    position: fixed;
     left: 10%;
     top: 1%;
     border: 1px solid black;
@@ -1438,7 +1437,7 @@ footer {
     .home .headText {
         position: absolute;
         width: 90%;
-        margin-top: 160px;
+        margin-top: 120px;
         color: #000000;
 
     }
