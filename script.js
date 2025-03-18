@@ -1,5 +1,5 @@
 document.addEventListener('scroll', () => {
-    const header = document.querySelector('nav');
+    const header = document.querySelector('nav', '/AICTE.html>nav');
 
     if (window.scrollY > 0) {
         header.classList.add('scrolled');
