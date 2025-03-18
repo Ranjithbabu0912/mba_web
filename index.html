@@ -8,9 +8,9 @@
 </head>
 
 <body>
-
+    
     <!-- NAV BAR -->
-
+    
     <div class="off-screen-menu">
         <ul>
             <li class="menu-item"><a href="#">Home</a></li>
@@ -25,35 +25,43 @@
             <li class="menu-item"><a href="#contact">Contact</a></li>
         </ul>
     </div>
-
+    
     <nav>
         <div class="navlogo">
             <img src="./assets/mba logo.jpg" alt="logo">
         </div>
         <ul class="navItem">
-            <li class="hideOnMobile"><a href="#">Home</a></li>
-            <li class="hideOnMobile"><a href="#about">About</a></li>
-            <li class="hideOnMobile"><a href="#Curriculum">Curriculum</a></li>
-            <li class="hideOnMobile"><a href="#Faculty">Faculty</a></li>
-            <li class="hideOnMobile"><a href="#Infrastructure">Infrastructure</a></li>
-            <li class="hideOnMobile"><a href="#Clubs">Clubs</a></li>
-            <li class="hideOnMobile"><a href="#Activities">Activities</a></li>
-            <li class="hideOnMobile"><a href="#contact">Contact</a></li>
+            <div class="hideOnMobile"><a href="#">Home</a></div>
+            <div class="hideOnMobile"><a href="#about">About</a></div>
+            <div class="hideOnMobile"><a href="#Curriculum">Curriculum</a></div>
+            
+            <div class="dropdown hideOnMobile">
+                <div class="hideOnMobile__dropbtn">Administration
+                    <img src="https://img.icons8.com/material-outlined/24/expand-arrow--v1.png" alt="">
+                    <div class="dropdown_content">
+                        <a class="hideOnMobile" href="#Faculty">Faculty</a>
+                        <a href="#Infrastructure">Infrastructure</a>
+                        <a class="hideOnMobile" href="#Clubs">Clubs</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hideOnMobile"><a href="#Activities">Activities</a></div>
+            <div class="hideOnMobile"><a href="#contact">Contact</a></div>
         </ul>
-
+        
         <div class="ham-menu">
             <span></span>
             <span></span>
             <span></span>
         </div>
     </nav>
-
-
+    
+    
     <!-- HOME SECTION -->
-
+    
     <section class="home">
-
-
+        
+        
         <div class="slider">
             <div class="slides">
                 <input type="radio" name="radio-btn" id="radio1">
@@ -62,18 +70,18 @@
                 <input type="radio" name="radio-btn" id="radio4">
 
                 <div class="slide first">
-                    <img src="/assets/slide_1.png" alt="slide 1">
+                    <img src="/assets/Students at campus 1.jpg" alt="slide 1">
                 </div>
                 <div class="slide">
-                    <img src="/assets/slide_2.png" alt="slide 2">
+                    <img src="/assets/Students at campus 2.jpg" alt="slide 2">
                 </div>
                 <div class="slide">
-                    <img src="/assets/slide_3.png" alt="slide 3">
+                    <img src="/assets/Pongal celebration.jpg" alt="slide 3">
                 </div>
                 <div class="slide">
-                    <img src="/assets/slide_4.png" alt="slide 4">
+                    <img src="/assets/slide_1.png" alt="slide 4">
                 </div>
-
+                
                 <!-- <div class="navigation-auto">
                     <div class="auto-btn1"></div>
                     <div class="auto-btn2"></div>
@@ -81,7 +89,7 @@
                     <div class="auto-btn4"></div>
                 </div> -->
 
-                
+
 
                 <!-- <div class="navigation-manual">
                     <label for="radio1" class="manual-btn auto-btn1"></label>
@@ -92,18 +100,19 @@
             </div>
         </div>
 
-            <div class="headText">
-                <h2> G.T.N. Group of Management</h2>
-                <hr>
-                <h6>G.T.N. Group of Institution is a Government Aided and Self Supporting Institution founded in
-                    <span>1964</span> in Dindigul and it is affiliated with <span>Madurai Kamaraj University.</span>
-                </h6>
-            </div>
-            <div class="buttons">
-                <button type="button"><a href="#about">Explore</a></button>
-                <button type="button"><a href="#contact">Contact</a></button>
-            </div>
-        
+        <div class="headText">
+            <h2 class="gtn">G.T.N Arts College</h2>
+            <h2> Department of Managment Studies</h2>
+            <hr>
+            <h6>G.T.N. Group of Institution is a Government Aided and Self Supporting Institution founded in
+                <span>1964</span> in Dindigul and it is affiliated with <span>Madurai Kamaraj University.</span>
+            </h6>
+        </div>
+        <div class="buttons">
+            <button type="button"><a href="#about">Explore</a></button>
+            <button type="button"><a href="#contact">Contact</a></button>
+        </div>
+
     </section>
 
 
@@ -117,7 +126,7 @@
                 <img src="/assets/letter-a.png" alt="letterA">
                 <h1>++</h1>
             </div>
-            <p>Accredited by NAAC with 'A++' Grade</p>
+            <p>Affiliated by AICTE and Madurai Kamaraj University</p>
             <hr>
             <div class="tab">
                 <img src="/assets/academic.png" alt="academic">
@@ -151,9 +160,7 @@
                 that encourages creativity, critical thinking, and problem-solving skills. This innovative approach to
                 education ensures that students are well-prepared to meet the challenges of a dynamic and competitive
                 world.
-            </p>
-            <br>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            
                 Located in a serene and tranquil campus surrounded by lush greenery, GTN Arts College provides an ideal
                 environment for academic pursuits. The institution is equipped with state-of-the-art infrastructure,
                 creating a perfect blend of nature and technology to facilitate effective learning and personal growth.
@@ -167,16 +174,13 @@
         </div>
         <div class="aboutDept">
             <h1>Our Department</h1>
-            <img src="" alt="Department of MBA">
+            <img class="abtImg" src="./assets/Industrial visity to Gandhigram.jpg" alt="Department of MBA">
             <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 The MBA Program at GTN Arts College is designed to shape future leaders and entrepreneurs who can
                 navigate the complexities of the global business landscape with confidence and integrity. With a focus
                 on fostering managerial excellence, critical thinking, and ethical decision-making, the program equips
                 students with the knowledge, skills, and mindset needed to excel in dynamic and competitive
                 environments.
-            </p>
-            <br>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 The Department of Management Studies at our college was established in the 2024-2025 academic year as a
                 co-educational institution, marking a significant step towards fostering inclusive and dynamic business
                 education. Anchored in a rich legacy of academic rigor, the MBA program offers a holistic learning
@@ -211,7 +215,7 @@
         <div class="container">
             <div class="keys1">
                 <div class="key key1">
-                    <h3>Industry-Relevant Curriculum </h3>
+                    <h3>Industry- <br>Relevant Curriculum </h3>
                 </div>
                 <div class="key key2">
                     <h3>Leadership and Managerial <br> Development </h3>
@@ -335,7 +339,7 @@
                 <h3>Mission</h3>
                 <p> &#x2022; To equip our students with the knowledge, skills, and ethical foundation necessary to
                     become leaders in the corporate world or successful entrepreneurs. </p>
-                <p>&#x2022; foster a culture
+                <p>&#x2022; Foster a culture
                     of continuous learning, critical thinking, and holistic development, ensuring our graduates are
                     adaptable, resilient, and ready to meet the challenges of a dynamic global business environment.</p>
             </div>
@@ -458,7 +462,7 @@
             <div class="image_slide">
                 <div class="sec faculty1">
                     <div class="gradient"></div>
-                    <img src="/assets/sample_pic.png" alt="faculty1">
+                    <img src="/assets/fac2.jpg" alt="faculty1">
                     <div class="faculty_info">
                         <h3>Dr. V. Kaveri</h3>
                         <p>Head of the Department</p>
@@ -466,7 +470,7 @@
                 </div>
                 <div class="sec faculty2">
                     <div class="gradient"></div>
-                    <img src="/assets/sample_pic.png" alt="faculty2">
+                    <img src="/assets/fac3.jpg" alt="faculty2">
                     <div class="faculty_info">
                         <h3>Dr. J. Suhasini</h3>
                         <p>Assistant Professor</p>
@@ -474,20 +478,20 @@
                 </div>
                 <div class="sec faculty3">
                     <div class="gradient"></div>
-                    <img src="/assets/sample_pic.png" alt="faculty3">
+                    <img src="/assets/fac1.jpg" alt="faculty3">
                     <div class="faculty_info">
                         <h3>Dr. M. Muthukumaran</h3>
                         <p>Assistant Professor</p>
                     </div>
                 </div>
-                <div class="sec faculty4">
+                <!-- <div class="sec faculty4">
                     <div class="gradient"></div>
                     <img src="/assets/sample_pic.png" alt="faculty4">
                     <div class="faculty_info">
                         <h3>Dr. R. Ananth Babu</h3>
                         <p>Assistant Professor</p>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -724,10 +728,10 @@
     <section class="Clubs" id="Clubs">
         <header>Clubs</header>
 
-        <p class="top-p">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The MBA Department at G.T.N. Arts College is committed to the
-            holistic development of its students by offering vibrant and dynamic club activities. These clubs are
-            designed to nurture leadership, creativity, teamwork, and professional skills, preparing students to excel
-            in their careers and personal growth.</p>
+        <h2>Impetus – The Management Club</h2>
+        <br>
+
+        <p class="top-p">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Impetus, the dynamic management club of GTN Arts College, is a platform designed to cultivate leadership, innovation, and strategic thinking among students. With a strong emphasis on bridging the gap between academic knowledge and industry expectations, Impetus fosters professional growth through interactive workshops, business simulations, case study competitions, and corporate networking events. The club serves as a catalyst for aspiring managers and entrepreneurs, equipping them with the skills needed to excel in the competitive business world. By promoting teamwork, creativity, and problem-solving, Impetus empowers students to take initiative, make informed decisions, and drive change in the corporate and entrepreneurial landscape.</p>
 
         <div class="timeline">
 
@@ -866,8 +870,8 @@
     <footer class="contact" id="contact">
         <div class="logo">
             <img src="./assets/mba logo.jpg" alt="logo">
-            <h1> G.T.N. Group of Management</h1>
-            <p>Department of MBA</p>
+            <!-- <p>Department of Management Studies</p> -->
+            <h1>G.T.N Department of Management Studies</h1>
         </div>
 
         <div class="quick_links">

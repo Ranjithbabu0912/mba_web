@@ -28,7 +28,7 @@ a {
 }
 
 section {
-    height: 100vh;
+    height: auto;
 }
 
 header {
@@ -50,12 +50,12 @@ nav {
     z-index: 1000;
     width: 100%;
     color: white;
-    height: 60px;
+    height: 80px;
 }
 
 .navlogo {
     img {
-        height: 50px;
+        height: 60px;
     }
 }
 
@@ -72,12 +72,59 @@ nav li {
 }
 
 nav a {
-    height: 10%;
     margin: 0px 10px;
     display: flex;
     align-items: center;
     font-size: 14px;
     font-weight: 400;
+}
+
+
+
+.dropdown {
+    font-size: 14px;
+    float: left;
+    overflow: hidden;
+    cursor: pointer;
+    font-weight: 400;
+    margin-right: 15px;
+
+    img{
+        filter: invert(1);
+        height: 20px;
+        position: absolute;
+    }
+}
+
+
+.dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown_content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown_content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown_content {
+    display: block;
+}
+
+.gtn {
+    font-size: 18px !important;
 }
 
 
@@ -93,6 +140,19 @@ nav a {
 
     .navItem a:after {
         background-color: navy;
+    }
+
+    .dropdown {
+        font-weight: 500;
+
+        img {
+            filter: invert(0);
+        }
+
+    }
+
+    .dropdown_content a {
+        color: navy;
     }
 
 }
@@ -127,7 +187,7 @@ nav a {
         color: navy;
         font-weight: 500;
     }
-    
+
 }
 
 .off-screen-menu.active {
@@ -159,30 +219,27 @@ nav {
     transition: 0.3s ease;
 }
 
-.ham-menu span:nth-child(1){
+.ham-menu span:nth-child(1) {
     top: 25%;
 }
 
-.ham-menu span:nth-child(3){
+.ham-menu span:nth-child(3) {
     top: 75%;
 }
 
-.ham-menu.active span:nth-child(1){
+.ham-menu.active span:nth-child(1) {
     top: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
 }
 
-.ham-menu.active span:nth-child(2){
+.ham-menu.active span:nth-child(2) {
     opacity: 0;
 }
 
-.ham-menu.active span:nth-child(3){
+.ham-menu.active span:nth-child(3) {
     top: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
 }
-
-
-
 
 
 
@@ -316,7 +373,7 @@ nav {
 .headText h2 {
     width: 110%;
     text-transform: uppercase;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 700;
 }
 
@@ -433,8 +490,7 @@ button {
 /* ABOUT PAGE */
 
 .about {
-    height: 180vh;
-    margin-bottom: 150px;
+    height: auto;
 }
 
 .aboutCollege {
@@ -445,20 +501,23 @@ button {
 }
 
 .aboutCollege img {
-    position: absolute;
+    /* position: absolute; */
+    float: left;
     margin-left: 50px;
-    width: 400px;
+    width: 350px;
 }
 
 .aboutCollege h1 {
     text-align: center;
     margin-bottom: 20px;
+    margin-top: 50px;
 }
 
 .aboutCollege p {
-    position: relative;
-    width: 60%;
+    position: absolute;
+    width: 58%;
     margin-left: 500px;
+    margin-top: 100px;
     font-size: 14px;
 }
 
@@ -467,13 +526,16 @@ button {
     flex-direction: column;
     text-align: justify;
     margin-left: 50px;
+    margin-bottom: 50px;
 }
 
 .aboutDept img {
     position: absolute;
+    object-fit: contain;
     right: 80px;
-    margin-top: 50px;
-    width: 350px;
+    margin-top: 100px;
+    height: 300px;
+    border-radius: 20px;
 }
 
 .aboutDept h1 {
@@ -492,7 +554,8 @@ button {
 /* KEY CORE DESIGN */
 
 .coreDesign {
-    height: 90vh;
+    margin-top: 50px;
+    height: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -580,7 +643,7 @@ button {
 .key h3 {
     color: white;
     text-align: center;
-    font-size: 8px;
+    font-size: 10px;
 }
 
 .info1 {
@@ -613,7 +676,6 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -50px;
     margin-bottom: -50px;
 
     hr {
@@ -939,7 +1001,7 @@ button {
     header {
         margin-top: 90px;
         padding: 0;
-        margin-bottom: 0;
+        margin-bottom: -50px;
     }
 }
 
@@ -1301,14 +1363,14 @@ footer {
 
     h1 {
         font-size: 20px;
-        text-align: left;
+        text-align: center;
         width: 40%;
+        margin-top: 10px;
         margin-left: 10px;
         color: navy;
     }
 
     p {
-        margin-top: 20px;
         margin-left: 0px;
     }
 }
@@ -1402,7 +1464,7 @@ footer {
         display: block;
     }
 
-    .off-screen-menu{
+    .off-screen-menu {
         height: 100vh;
     }
 
