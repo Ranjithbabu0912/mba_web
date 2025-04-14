@@ -942,7 +942,8 @@ button {
 }
 
 .faculty_container {
-    display: flex;
+    display: grid;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     overflow: hidden;
@@ -970,6 +971,8 @@ button {
 .sec {
     background: navy;
     height: 290px;
+    /* display: flex; */
+    /* flex-direction: column; */
     overflow: hidden;
     border-radius: 10px;
     padding: 20px;
@@ -990,6 +993,10 @@ button {
         color: white;
         z-index: 10;
         transition: all 0.3s ease-in-out;
+    }
+
+    button {
+
     }
 }
 
@@ -1017,7 +1024,7 @@ button {
 
     .faculty_info {
         transition: all 0.3s ease-in-out;
-        font-size: 14px;
+        /* font-size: 14px; */
     }
 }
 
@@ -1188,6 +1195,7 @@ input:checked+label .description {
 
 .top-p,
 .bottom-p {
+    text-align: justify;
     width: 70%;
 }
 
@@ -1204,6 +1212,7 @@ input:checked+label .description {
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 0.8s ease, transform 0.8s ease;
+    text-align: justify ;
 }
 
 .club_container.visible {
@@ -1377,7 +1386,7 @@ footer {
     height: auto;
     background: #fff;
     display: grid;
-    grid-template-columns: 300px 250px 1fr;
+    grid-template-columns: 350px 250px 1fr;
     padding-bottom: 50px;
 }
 
@@ -1457,17 +1466,19 @@ footer {
         background: navy;
         padding: 20px;
         border-radius: 20px;
+        height: 300px;
+        width: 200px;
 
         p {
             margin-top: 0;
             color: white;
-            width: 85%;
+            /* width: 85%; */
             font-size: 12px;
-            margin-bottom: 20px;
+            /* margin-bottom: 20px; */
         }
 
         h3 {
-            margin-bottom: 20px;
+            margin: 20px 0;
             font-size: 14px;
             color: white;
             border-bottom: 2px solid white;
